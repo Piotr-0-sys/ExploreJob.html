@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Job</title>
+</head>
+<head>
+    <title>Job Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-expand-sm bg-primary navbar-dark">
+        <ul>
+          <img src="look.png" height="60px"  width="100px" display = "flex" class="logo-img">
+          <li><a href="#" class="nav-link active">Jobs Search</a></li>
+          <li><a href="#" class="nav-link active">Explore Companies</a></li>
+          <li><a href="#" class="nav-link active">Profile</a></li>
+          <div class="dropdown">
+              <button>Menu</button>
+              <div class="dropdown-content">
+                  <a href="#">Name of User</a>
+                  <a href="#" style="color: red;">Sign out</a>
+              </div>
+          </div>
+        </ul>
+      </nav>
+    <style>
+        .container-wrapper {
+            display: flex;
+            transition: transform 0.3s ease;
+            width: 100%; /* Adjust based on the number of containers */
+            padding-top: 1%;
+        }
+        .container-wrapper :hover{
+            transform: scale(1.05);
+            transition: opacity 0.3s;
+            transition: transform 0.3s; 
+        }
+        .tile {
+            padding: 20px;
+            border: 2px solid #007BFF;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px; /* Set a fixed width for each tile */
+            margin: 0 10px; /* Space between tiles */
+            text-align: center; /* Center text inside the tile */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .image-container {
+            position: relative;
+            width: 300px; /* Set the width of the container */
+            height: 200px; /* Set the height of the container */
+            overflow: hidden; /* Hide overflow */
+            border: 2px solid #ccc; /* Optional: Add a border */
+            border-radius: 10px; /* Optional: Rounded corners */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+        .image-container {
+            position: relative;
+            width: 300px; /* Set the width of the container */
+            height: 200px; /* Set the height of the container */
+            overflow: hidden; /* Hide overflow */
+            border: 2px solid #ccc; /* Optional: Add a border */
+            border-radius: 10px; /* Optional: Rounded corners */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+
+        .image-container:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .hover-image {
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+            transition: opacity 0.3s; /* Smooth transition for opacity */
+        }
+
+        .image-container:hover .hover-image {
+            opacity: 0.8; /* Change opacity on hover */
+        }
+        .tile :hover{
+            transform: scale(1.05);
+            transition: opacity 0.3s;
+            transition: transform 0.3s; 
+        }
+        .more-content {
+            display: none;
+        }
+        
+        .hover-paragraph:hover .more-content {
+            display: inline;
+        }
+        .tile:hover .additional-text {
+            display: contents;
+        }
+        .additional-text {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .review{
+            display: flex; /* Use flexbox for horizontal alignment */
+            align-items: center; /* Center items vertically */
+            gap: 60%; /* Space between paragraph and button */
+        }
+
+        .paragraph {
+            font-size: 16px; /* Font size for the paragraph */
+            color: #333; /* Text color */
+        }
+</style>
+</head>
+<div class="container-wrapper">
+    <h2 style="padding-bottom: 1px; margin-bottom: 0%;">EXPLORE COMPANIES </h2>
+    </div>
+    <div class="review">
+        <h4 class="paragraph">Learn about new internship, reviews, company culture, perks and benefits</h4>
+        <button class="button" style="display: inline; background-color: #008a9c;">Write a Review</button>
+    </div>
+    <div class="container-wrapper" id="containerWrapper">
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 1</h2>
+            <p class="hover-paragraph">summary of the company.
+                <span class="additional-text">
+                    More info of the company here More info of the company here More info of the company here More info of the company hereMore info of the company here
+                </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 2</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here
+                </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 3</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here   
+                </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 4</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here   
+                </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 5</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here  
+                 </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 6</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here   
+                 </span>
+            </p>
+        </div>
+        <div class="tile">
+            <img src="pictureholder.jpg" alt="pictureholder" class="image-container">
+            <h2>COMPANY 7</h2>
+            <p>summary of the company.
+                <span class="additional-text">
+                    More info of the company here   
+                 </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+    <div class="container-wrapper">
+    <img src="review.png" style="width: 100px; display: inline; margin-left: 300px; margin-right: 40px;">
+    <h1 style="display: flow-root; margin-right: 30px;">Culture and Values<p style="font-size: small;">Find out about the company culture.</p></h1>
+    <img src="love.png" style="width: 100px; display: inline; margin-right: 40px;">
+    <h1 style="display: flow-root; margin-right: 30px;">Ratings and Reviews<p style="font-size: small;">Read review from internship.</p></h1>
+    <img src="growth.png" style="width: 100px; display:inline; margin-right: 40px;">
+    <h1 style="display: flow-root;">Benefits<p style="font-size: small;">Become more cheerful.</p></h1>
+    <div>
+</div>
+    <script>
+        const containerWrapper = document.getElementById('containerWrapper');
+        const tiles = document.querySelectorAll('.tile');
+        let currentContainer = 0;
+
+        function updateContainerPosition() {
+            const offset = -currentContainer * (tiles[0].offsetWidth + 20); // 20 is the margin
+            containerWrapper.style.transform = `translateX(${offset}px)`;
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentContainer < tiles.length - 1) {
+                currentContainer++;
+                updateContainerPosition();
+            }
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentContainer > 0) {
+                currentContainer--;
+                updateContainerPosition();
+            }
+        });
+
+        // Initialize the position
+        updateContainerPosition();
+    </script>
+
+</body>
+</html>
